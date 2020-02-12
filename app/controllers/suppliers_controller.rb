@@ -31,6 +31,7 @@ class SuppliersController < ApplicationController
     #Category.find_by(id: 21).products
     #https://www.sitepoint.com/master-many-to-many-associations-with-activerecord/
     #Product.joins(:categories).where(categories: {categoryName: 'Pappardelle alla Bolognese'}).distinct.map {|x| puts x.productName}
+    
     render json: @supplier
   end
 
