@@ -1,0 +1,238 @@
+{
+  "apiVersion": "1.0",
+  "swaggerVersion": "1.2",
+  "basePath": "http://localhost:3000",
+  "resourcePath": "suppliers",
+  "apis": [
+    {
+      "path": "/suppliers",
+      "operations": [
+        {
+          "summary": "Fetches all Suppliers items",
+          "notes": "This lists all the active suppliers",
+          "responseMessages": [
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "The request you made is not acceptable"
+            }
+          ],
+          "nickname": "Suppliers#index",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "path": "/suppliers",
+      "operations": [
+        {
+          "summary": "Creates a new Supplier",
+          "responseMessages": [
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "form",
+              "name": "supplierName",
+              "type": "string",
+              "description": "Supplier Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "contactName",
+              "type": "string",
+              "description": "Contact Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "address",
+              "type": "string",
+              "description": "Address",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "city",
+              "type": "string",
+              "description": "City",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "postalCode",
+              "type": "string",
+              "description": "Postal Code",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "country",
+              "type": "string",
+              "description": "Country",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "phone",
+              "type": "string",
+              "description": "Phone",
+              "required": true,
+              "allowableValues": {
+                "valueType": "LIST",
+                "values": [
+
+                ]
+              }
+            }
+          ],
+          "nickname": "Suppliers#create",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "path": "/suppliers/{id}",
+      "operations": [
+        {
+          "summary": "Fetches a single Supplier item",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "Supplier",
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "integer",
+              "description": "Supplier Id",
+              "required": true
+            }
+          ],
+          "nickname": "Suppliers#show",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "path": "/suppliers/{id}",
+      "operations": [
+        {
+          "summary": "Update a existing Supplier",
+          "responseMessages": [
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "integer",
+              "description": "Supplier Id",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "supplierName",
+              "type": "string",
+              "description": "Supplier Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "contactName",
+              "type": "string",
+              "description": "Contact Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "address",
+              "type": "string",
+              "description": "Address",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "city",
+              "type": "string",
+              "description": "City",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "postalCode",
+              "type": "string",
+              "description": "Postal Code",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "country",
+              "type": "string",
+              "description": "Country",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "phone",
+              "type": "string",
+              "description": "Phone",
+              "required": true,
+              "allowableValues": {
+                "valueType": "LIST",
+                "values": [
+
+                ]
+              }
+            }
+          ],
+          "nickname": "Suppliers#update",
+          "method": "patch"
+        }
+      ]
+    }
+  ],
+  "authorizations": null
+}
