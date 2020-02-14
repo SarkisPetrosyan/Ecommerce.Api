@@ -1,10 +1,30 @@
 class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :update, :destroy]
 
+  swagger_controller :customers, "Customers Management"
+
+
+
+  swagger_api :index do
+    summary "Fetches all Customer items"
+    notes "This lists all the active customer"
+    response :unauthorized
+    response :not_acceptable, "The request you made is not acceptable"
+  end
+
   # GET /customers
   def index
     @customers = Customer.all
     render json: @customers
+  end
+
+  swagger_api :show do
+    summary "Fetches a single Customer item"
+    param :path, :id, :integer, :required, "Customer Id"
+    response :ok, "Success", :Customer
+    response :unauthorized
+    response :not_acceptable
+    response :not_found
   end
 
   # GET /customers/1
@@ -12,6 +32,18 @@ class CustomersController < ApplicationController
     render json: @customer
   end
 
+
+  swagger_api :create do
+    summary "Creates a new Customer"
+    param :form, :supplierName, :string, :required, "Customer Name"
+    param :form, :contactName , :string, :required, "Contact Name"
+    param :form, :address, :string, :required, "Address"
+    param :form, :city, :string, :required, "City"
+    param :form, :postalCode, :string, :required, "Postal Code"
+    param :form, :country, :string, :required, "Country"
+    response :unauthorized
+    response :not_acceptable
+  end
   # POST /customers
   def create
     @customer = Customer.new(customer_params)
@@ -23,6 +55,20 @@ class CustomersController < ApplicationController
     end
   end
 
+
+  swagger_api :update do
+    summary "Update a existing Customer"
+    param :path, :id, :integer, :required, "Customer Id"
+    param :form, :supplierName, :string, :required, "Customer Name"
+    param :form, :contactName , :string, :required, "Contact Name"
+    param :form, :address, :string, :required, "Address"
+    param :form, :city, :string, :required, "City"
+    param :form, :postalCode, :string, :required, "Postal Code"
+    param :form, :country, :string, :required, "Country"
+    response :unauthorized
+    response :not_acceptable
+  end
+
   # PATCH/PUT /customers/1
   def update
     if @customer.update(customer_params)
@@ -30,6 +76,14 @@ class CustomersController < ApplicationController
     else
       render json: @customer.errors, status: :unprocessable_entity
     end
+  end
+
+
+  swagger_api :destroy do
+    summary "Deletes an existing Customer item"
+    param :path, :id, :integer, :optional, "Customer Id"
+    response :unauthorized
+    response :not_found
   end
 
   # DELETE /customers/1

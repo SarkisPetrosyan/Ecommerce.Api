@@ -4,8 +4,16 @@
   "basePath": "http://localhost:3000",
   "apis": [
     {
+      "path": "/apidocs/employees.{format}",
+      "description": "Employees Management"
+    },
+    {
       "path": "/apidocs/shippers.{format}",
       "description": "Shippers Management"
+    },
+    {
+      "path": "/apidocs/customers.{format}",
+      "description": "Customers Management"
     },
     {
       "path": "/apidocs/suppliers.{format}",
