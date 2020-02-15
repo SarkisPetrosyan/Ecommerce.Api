@@ -77,11 +77,12 @@ class CategoriesController < ApplicationController
     productCategory.destroy    
   end
 
-  # def CategoryProd
-  #   productCategory = ProductCategory.where(product_id: @product.id, category_id:  @category.id).first;    
-  #   raise ActiveRecord::RecordNotFound.new("Product Category was not found") if productCategory.nil?
-  #   productCategory.destroy    
-  # end
+  def CategoryProd
+    productCategory = ProductCategory.where(category_id:  @category.id).select(product_id);    
+    # raise ActiveRecord::RecordNotFound.new("Product Category was not found") if productCategory.nil?
+
+   puts productCategory    
+  end
 
   swagger_api :update do
     summary "Update a existing Category"
