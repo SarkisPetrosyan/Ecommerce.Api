@@ -8,6 +8,10 @@
       "description": "Employees Management"
     },
     {
+      "path": "/apidocs/categories.{format}",
+      "description": "Categories Management"
+    },
+    {
       "path": "/apidocs/shippers.{format}",
       "description": "Shippers Management"
     },
@@ -18,10 +22,6 @@
     {
       "path": "/apidocs/suppliers.{format}",
       "description": "Supplier Management"
-    },
-    {
-      "path": "/apidocs/categories.{format}",
-      "description": "Categories Management"
     }
   ],
   "authorizations": null,
