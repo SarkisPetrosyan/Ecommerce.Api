@@ -3744,3 +3744,16 @@ Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 743
 
 
 Started GET "/swagger" for ::1 at 2020-02-15 00:16:40 -0800
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at C:/Users/Lenovo/Desktop/Store/Ecommerce.Api/config/environment.rb:5)
