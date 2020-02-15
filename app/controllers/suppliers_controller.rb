@@ -80,6 +80,13 @@ class SuppliersController < ApplicationController
     end
   end
 
+  swagger_api :destroy do
+    summary "Deletes an existing Supplier item"
+    param :path, :id, :integer, :optional, "Supplier Id"
+    response :unauthorized
+    response :not_found
+  end
+
   # DELETE /suppliers/1
   def destroy
     @supplier.destroy

@@ -232,6 +232,37 @@
           "method": "patch"
         }
       ]
+    },
+    {
+      "path": "/suppliers/{id}",
+      "operations": [
+        {
+          "summary": "Deletes an existing Supplier item",
+          "responseMessages": [
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "path",
+              "name": "id",
+              "type": "integer",
+              "description": "Supplier Id",
+              "required": false
+            }
+          ],
+          "nickname": "Suppliers#destroy",
+          "method": "delete"
+        }
+      ]
     }
   ],
   "authorizations": null
