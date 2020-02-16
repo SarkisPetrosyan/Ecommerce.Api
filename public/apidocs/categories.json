@@ -43,6 +43,70 @@
       ]
     },
     {
+      "path": "/CategoryProd",
+      "operations": [
+        {
+          "summary": "Fetches a single CategoryProd ",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "CategoryProd",
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "form",
+              "name": "categoryId",
+              "type": "string",
+              "description": "Category Id",
+              "required": true
+            }
+          ],
+          "nickname": "Categories#CategoryProd",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "path": "/CategoryPro",
+      "operations": [
+        {
+          "summary": "Fetches all Categories items",
+          "notes": "This lists all the active categories",
+          "responseMessages": [
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "The request you made is not acceptable"
+            }
+          ],
+          "nickname": "Categories#CategoryPro",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "path": "/categories/destroyproductCategory",
       "operations": [
         {
@@ -63,14 +127,14 @@
             {
               "paramType": "form",
               "name": "productId",
-              "type": "integer",
+              "type": "string",
               "description": "Product Id",
               "required": true
             },
             {
               "paramType": "form",
               "name": "categoryId",
-              "type": "integer",
+              "type": "string",
               "description": "Category Id",
               "required": true
             }

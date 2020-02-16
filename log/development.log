@@ -4931,3 +4931,953 @@ Processing by CategoriesController#destroyproductCategory as JSON
 Completed 404 Not Found in 31ms (Views: 0.2ms | ActiveRecord: 7.9ms | Allocations: 13762)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-16 00:54:19 +0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (66.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/CategoryProd" for ::1 at 2020-02-16 00:55:25 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 86ms (Views: 0.2ms | ActiveRecord: 7.2ms | Allocations: 3146)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 00:55:48 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 142)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 00:59:46 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 01:39:41 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 6ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1964)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 01:40:44 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 10ms (Views: 0.2ms | ActiveRecord: 5.2ms | Allocations: 1946)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-16 15:06:09 +0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (601.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryPro" for ::1 at 2020-02-16 15:08:15 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryPro as JSON
+  [1m[36mProductCategory Load (53.5ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories`[0m
+  ↳ app/controllers/categories_controller.rb:109:in `CategoryPro'
+Completed 200 OK in 131ms (Views: 13.6ms | ActiveRecord: 69.6ms | Allocations: 10523)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 15:28:15 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 87ms (Views: 0.2ms | ActiveRecord: 4.3ms | Allocations: 3132)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 15:32:22 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 15:34:05 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1937)
+
+
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:37:22 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"7", "categoryId"=>"7"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:155:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:156:in `set_category_product'
+  [1m[36mProductCategory Load (36.2ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 7 AND `product_categories`.`category_id` = 7 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:76:in `destroyproductCategory'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/categories_controller.rb:78:in `destroyproductCategory'
+  [1m[36mProductCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `product_categories` WHERE `product_categories`.`id` = 7[0m
+  ↳ app/controllers/categories_controller.rb:78:in `destroyproductCategory'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/categories_controller.rb:78:in `destroyproductCategory'
+Completed 204 No Content in 100ms (ActiveRecord: 46.5ms | Allocations: 17698)
+
+
+Started GET "/CategoryPro" for ::1 at 2020-02-16 15:37:40 +0300
+Processing by CategoriesController#CategoryPro as JSON
+  [1m[36mProductCategory Load (0.5ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories`[0m
+  ↳ app/controllers/categories_controller.rb:109:in `CategoryPro'
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.5ms | Allocations: 5467)
+
+
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:41:49 +0300
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:41:49 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"1", "categoryId"=>"1"}
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"1", "categoryId"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:155:in `set_category_product'
+  ↳ app/controllers/categories_controller.rb:155:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:156:in `set_category_product'
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:156:in `set_category_product'
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:41:50 +0300
+  [1m[36mProductCategory Load (0.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 1 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:76:in `destroyproductCategory'
+  [1m[36mProductCategory Load (1.8ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 1 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:76:in `destroyproductCategory'
+Completed 200 OK in 51ms (Views: 0.7ms | ActiveRecord: 11.4ms | Allocations: 18461)
+
+
+Completed 200 OK in 53ms (Views: 0.5ms | ActiveRecord: 11.7ms | Allocations: 19031)
+
+
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"1", "categoryId"=>"1"}
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:155:in `set_category_product'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:156:in `set_category_product'
+  [1m[36mProductCategory Load (1.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 1 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:76:in `destroyproductCategory'
+Completed 200 OK in 69ms (Views: 0.5ms | ActiveRecord: 13.5ms | Allocations: 16850)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:43:51 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#destroyproductCategory as JSON
+Completed 404 Not Found in 23ms (Views: 0.2ms | ActiveRecord: 4.7ms | Allocations: 3155)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/categories/destroyproductCategory" for ::1 at 2020-02-16 15:46:19 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"1", "categoryId"=>"1"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:155:in `set_category_product'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:156:in `set_category_product'
+  [1m[36mProductCategory Load (0.5ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 1 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:76:in `destroyproductCategory'
+Completed 200 OK in 58ms (Views: 0.7ms | ActiveRecord: 10.3ms | Allocations: 17857)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/CategoryProd" for ::1 at 2020-02-16 15:48:44 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"1"}
+Completed 404 Not Found in 11ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1938)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/CategoryProd" for ::1 at 2020-02-16 15:53:45 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"1"}
+Completed 404 Not Found in 25ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 3133)
+
+
+Started POST "/CategoryProd" for ::1 at 2020-02-16 15:54:07 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"'1'"}
+Completed 404 Not Found in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 143)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started PATCH "/CategoryProd" for ::1 at 2020-02-16 16:00:16 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"1"}
+Completed 404 Not Found in 6ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1965)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:03:53 +0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 25ms (Views: 0.2ms | ActiveRecord: 4.2ms | Allocations: 3132)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:06:16 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 10ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:08:56 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:09:27 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 8ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:11:34 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 1959)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:12:43 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 1924)
+
+
+Started GET "/categories/destroyproductCategory" for ::1 at 2020-02-16 16:13:52 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+Completed 404 Not Found in 8ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 1947)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 16:15:18 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"1", "categoryId"=>"1"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:159:in `set_category_product'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:160:in `set_category_product'
+  [1m[36mProductCategory Load (1.3ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 1 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/categories_controller.rb:80:in `destroyproductCategory'
+  [1m[36mProductCategory Destroy (0.5ms)[0m  [1m[31mDELETE FROM `product_categories` WHERE `product_categories`.`id` = 1[0m
+  ↳ app/controllers/categories_controller.rb:80:in `destroyproductCategory'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/categories_controller.rb:80:in `destroyproductCategory'
+Completed 204 No Content in 83ms (ActiveRecord: 15.3ms | Allocations: 19486)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/CategoryProd" for ::1 at 2020-02-16 16:18:57 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 11ms (Views: 0.2ms | ActiveRecord: 4.3ms | Allocations: 1942)
+
+
+Started POST "/CategoryProd" for ::1 at 2020-02-16 16:18:58 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 137)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:21:52 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 10ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 1925)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/CategoryProd" for ::1 at 2020-02-16 16:27:31 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 23ms (Views: 0.2ms | ActiveRecord: 3.9ms | Allocations: 3133)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:40:10 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 24ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 3132)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:44:56 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 1937)
+
+
+Started GET "/CategoryPro" for ::1 at 2020-02-16 16:45:33 +0300
+Processing by CategoriesController#CategoryPro as JSON
+  [1m[36mProductCategory Load (0.8ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories`[0m
+  ↳ app/controllers/categories_controller.rb:114:in `CategoryPro'
+Completed 200 OK in 30ms (Views: 14.2ms | ActiveRecord: 3.7ms | Allocations: 9793)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:48:35 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 10ms (Views: 0.2ms | ActiveRecord: 4.4ms | Allocations: 1937)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 16:55:46 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 142)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 17:03:04 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 25ms (Views: 0.2ms | ActiveRecord: 5.6ms | Allocations: 3131)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 17:04:18 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 1937)
+
+
+Started GET "/CategoryProd" for ::1 at 2020-02-16 17:07:03 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.5ms | Allocations: 1924)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/CategoryProd" for ::1 at 2020-02-16 17:08:05 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 11ms (Views: 0.2ms | ActiveRecord: 3.8ms | Allocations: 1938)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started PATCH "/CategoryProd" for ::1 at 2020-02-16 17:08:54 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 1960)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/CategoryProd" for ::1 at 2020-02-16 17:09:41 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+Completed 404 Not Found in 8ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 1925)
+
+
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:52:46 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"1"}
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:52:46 +0300
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.5ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+Completed 404 Not Found in 65ms (Views: 0.2ms | ActiveRecord: 10.4ms | Allocations: 15236)
+
+
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"1"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.5ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 1 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+Completed 404 Not Found in 63ms (Views: 0.3ms | ActiveRecord: 12.9ms | Allocations: 13768)
+
+
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:53:02 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"2"}
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 2 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 1.2ms | Allocations: 4828)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:57:19 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"2"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 2 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+Completed 200 OK in 48ms (Views: 0.5ms | ActiveRecord: 11.2ms | Allocations: 16535)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:58:34 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 2 ORDER BY `product_categories`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:77:in `destroyproductCategory'
+Completed 200 OK in 48ms (Views: 0.4ms | ActiveRecord: 11.8ms | Allocations: 16494)
+
+
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 17:59:11 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"productId"=>"2", "categoryId"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:162:in `set_category_product'
+  [1m[36mProductCategory Load (0.4ms)[0m  [1m[34mSELECT `product_categories`.* FROM `product_categories` WHERE `product_categories`.`product_id` = 2 AND `product_categories`.`category_id` = 2[0m
+  ↳ app/controllers/categories_controller.rb:80:in `destroyproductCategory'
+Completed 200 OK in 47ms (Views: 7.0ms | ActiveRecord: 10.2ms | Allocations: 16558)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/categories/destroyproductCategory" for ::1 at 2020-02-16 18:01:24 +0300
+Processing by CategoriesController#destroyproductCategory as JSON
+  Parameters: {"categoryId"=>"2"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:161:in `set_category_product'
+Completed 404 Not Found in 25ms (Views: 0.2ms | ActiveRecord: 7.1ms | Allocations: 7578)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started DELETE "/CategoryProd" for ::1 at 2020-02-16 18:17:18 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:159:in `set_category_prod'
+  [1m[36mProductCategory Load (0.7ms)[0m  [1m[34mSELECT `product_categories`.`product_id` FROM `product_categories` WHERE `product_categories`.`category_id` = 2[0m
+  ↳ app/controllers/categories_controller.rb:96:in `CategoryProd'
+Completed 200 OK in 52ms (Views: 6.5ms | ActiveRecord: 8.4ms | Allocations: 11876)
+
+
+Started DELETE "/CategoryProd" for ::1 at 2020-02-16 18:32:52 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:159:in `set_category_prod'
+  [1m[36mProductCategory Load (0.6ms)[0m  [1m[34mSELECT productName FROM `product_categories` INNER JOIN `products` ON `products`.`id` = `product_categories`.`product_id` WHERE `product_categories`.`category_id` = 2[0m
+  ↳ app/controllers/categories_controller.rb:96:in `CategoryProd'
+Completed 200 OK in 132ms (Views: 113.2ms | ActiveRecord: 2.9ms | Allocations: 13772)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/CategoryProd" for ::1 at 2020-02-16 18:37:51 +0300
+Processing by CategoriesController#CategoryProd as JSON
+Completed 404 Not Found in 9ms (Views: 0.2ms | ActiveRecord: 3.6ms | Allocations: 1969)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/CategoryProd" for ::1 at 2020-02-16 18:38:44 +0300
+Processing by CategoriesController#CategoryProd as JSON
+  Parameters: {"categoryId"=>"2"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/categories_controller.rb:159:in `set_category_prod'
+  [1m[36mProductCategory Load (0.7ms)[0m  [1m[34mSELECT productName FROM `product_categories` INNER JOIN `products` ON `products`.`id` = `product_categories`.`product_id` WHERE `product_categories`.`category_id` = 2[0m
+  ↳ app/controllers/categories_controller.rb:96:in `CategoryProd'
+Completed 200 OK in 48ms (Views: 14.2ms | ActiveRecord: 8.9ms | Allocations: 11912)
+
+
