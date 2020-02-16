@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  post 'customers_token' => 'customers_token#create'
+  post 'user_token' => 'user_token#create'
   resources :employees
 
-  post 'productCategory', action: :productCategory, controller: 'categories'
-  post 'CategoryProd', action: :CategoryProd, controller: 'categories'
-  get 'CategoryPro', action: :CategoryPro, controller: 'categories'
+  post 'productCategory', action: :productCategory, controller: 'product_category'
+  post 'CategoryProd', action: :CategoryProd, controller: 'product_category'
+  get 'CategoryPro', action: :CategoryPro, controller: 'product_category'
   # delete 'destroyproductCategory', action: :destroyproductCategory, controller: 'categories'
-  delete '/categories/destroyproductCategory' => 'categories#destroyproductCategory'
+  delete '/product_category/destroyproductCategory' => 'product_category#destroyproductCategory'
 
   resources :shippers
   resources :customers

@@ -1,7 +1,5 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :update, :destroy,]
-  before_action :set_category_product, only: [:productCategory, :destroyproductCategory]
-  before_action :set_category_prod, only: [:CategoryProd]
 
   swagger_controller :categories, "Categories Management"
 
@@ -50,72 +48,8 @@ class CategoriesController < ApplicationController
     else
       render json: @category.errors, status: :unprocessable_entity
     end
-  end
-
-  swagger_api :productCategory do
-    summary "Creates a new Product Category"
-    param :form, :categoryId, :string, :required, "Category Id"    
-    param :form, :productId, :string, :required, "Product Id"
-    response :unauthorized
-    response :not_acceptable
-  end
-
-  def productCategory
-    ProductCategory.create(product: @product, category: @category);
-  end
-
-  swagger_api :destroyproductCategory do
-    summary "Deletes an existing Destroy Product Category"
-    param :form, :productId, :string, :required, "Product Id"
-    param :form, :categoryId, :string, :required, "Category Id"    
-    response :unauthorized
-    response :not_found
-  end
-
-  def destroyproductCategory
-    puts "error"
-    productCategory = ProductCategory.where(product_id: @product.id, category_id:  @category.id) 
-    puts "error" 
-    raise ActiveRecord::RecordNotFound.new("Product Category was not found") if productCategory.nil?
-    render json: productCategory
-  end
-
-  swagger_api :CategoryProd do
-    summary "Fetches a single CategoryProd "
-    param :form, :categoryId, :string, :required, "Category Id"
-    response :ok, "Success", :CategoryProd
-    response :unauthorized
-    response :not_acceptable
-    response :not_found
-  end
-
-  def CategoryProd
-    productCategory = ProductCategory.joins(:product).select('productName').where(category_id:  @category.id) 
-    puts "error" 
-    
-    render json: productCategory
-  #   puts "error"
-  #   productCategory = ProductCategory.where(category_id:  @category.id).first
-  #   # productCategory = ProductCategory.all  
-  #   puts "error"
-  #   # raise ActiveRecord::RecordNotFound.new("Product Category was not found") if productCategory.nil?
-
-  #  render json: productCategory    
-  end
-  swagger_api :CategoryPro do
-    summary "Fetches all Categories items"
-    notes "This lists all the active categories"
-    response :unauthorized
-    response :not_acceptable, "The request you made is not acceptable"
-  end
+  end  
   
-  def CategoryPro
-    # productCategory = ProductCategory.where(category_id:  @category.id).first;    
-    productCategory = ProductCategory.all  
-    # raise ActiveRecord::RecordNotFound.new("Product Category was not found") if productCategory.nil?
-
-   render json: productCategory    
-  end
 
   swagger_api :update do
     summary "Update a existing Category"
@@ -135,13 +69,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  swagger_api :destroy do
-    summary "Deletes an existing Category item"
-    param :form, :categoryId, :integer, :optional, "Category Id"
-    param :form, :productId, :integer, :optional, "Category Id"
-    response :unauthorized
-    response :not_found
-  end
+  
 
   # DELETE /categories/1
   def destroy
@@ -154,16 +82,9 @@ class CategoriesController < ApplicationController
       @category = Category.find(params[:id])
     end
 
-    def set_category_prod
-      data = params.permit(:categoryId)      
-      @category = Category.find(data[:categoryId]);
-    end
+   
 
-    def set_category_product
-      data = params.permit(:categoryId, :productId)      
-      @category = Category.find(data[:categoryId]);
-      @product = Product.find(data[:productId]);      
-    end
+    
 
     # Only allow a trusted parameter "white list" through.
     def category_params
