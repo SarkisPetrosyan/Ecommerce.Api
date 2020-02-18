@@ -94,7 +94,7 @@ class CategoriesController < ApplicationController
 
   # PATCH/PUT /categories/1
   def update
-    if @categyor.update(category_params)
+    if @category.update(category_params)
       render json: @category
     else
       render json: @category.errors, status: :unprocessable_entity

@@ -1,5 +1,7 @@
 class CustomersController < ApplicationController
+  before_action :authenticate_customer,  only: [:index, :update, :destroy]
   before_action :set_customer, only: [:show, :update, :destroy]
+  before_action :authorize, only: [:update, :destroy]
 
   swagger_controller :customers, "Customers Management"
 
@@ -99,6 +101,10 @@ class CustomersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def customer_params
-      params.require(:customer).permit(:customerName, :contactName, :address, :city, :postalCode, :country)
+      params.require(:customer).permit(:email, :password, :password_confirmation, :customerName, :contactName, :address, :city, :postalCode, :country)
+    end
+
+    def authorize
+      return head(:unauthorized) unless current_customer && current_customer.can_modify_customer?(params[:id])
     end
 end

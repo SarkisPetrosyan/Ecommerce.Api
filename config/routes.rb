@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'customer_token' => 'customer_token#create'
   resources :employees
 
   post 'productCategory', action: :productCategory, controller: 'categories'
