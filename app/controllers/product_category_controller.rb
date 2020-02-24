@@ -49,6 +49,21 @@ class ProductCategoryController < ApplicationController
   
   end
 
+
+  swagger_api :CategoryProdAll do
+    summary "Fetches all Category Prod All items"
+    notes "This lists all the active CategoryProdAll"
+    response :unauthorized
+    response :not_acceptable, "The request you made is not acceptable"
+  end
+  def CategoryProdAll
+    productCategoryAll = ProductCategory.joins(:product, :category).select('productName', 'categoryName' )
+    puts "error" 
+    
+    render json: productCategoryAll
+  
+  end
+
   swagger_api :CategoryPro do
     summary "Fetches all CategoryPro items"
     notes "This lists all the active ProductCategory"

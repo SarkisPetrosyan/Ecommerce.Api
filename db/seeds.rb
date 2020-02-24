@@ -48,5 +48,22 @@
 #          )
 #     end
 
+# 20.times do
+#         Order.create(
+#             orderDate: Faker::Date.birthday(min_age: 18, max_age: 65),
+#             customer_id:  Faker::Number.within(range: 1..20),
+#             employee_id:  Faker::Number.within(range: 1..20),
+#             shipper_id: Faker::Number.within(range: 1..20) 
+#              )
+#         end
+# 20.times do
+#     OrderDetail.create(
+#         quantity: Faker::Number.within(range: 5..100),
+#         order_id:  Faker::Number.within(range: 1..20),
+#         product_id:  Faker::Number.within(range: 1..20),
+            
+#              )
+#         end
+
 
 

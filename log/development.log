@@ -6203,3 +6203,1699 @@ No serializer found for resource: #<ProductCategory id: 3, product_id: 3, catego
 Completed 200 OK in 75ms (Views: 22.3ms | ActiveRecord: 1.7ms | Allocations: 20812)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/shippers" for ::1 at 2020-02-17 01:57:44 +0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ShippersController#index as JSON
+  [1m[36mShipper Load (45.4ms)[0m  [1m[34mSELECT `shippers`.* FROM `shippers`[0m
+  ↳ app/controllers/shippers_controller.rb:16:in `index'
+No serializer found for resource: #<Shipper id: 1, shipperName: "Odis Franecki", phone: "6876399812", created_at: "2020-02-12 20:06:45", updated_at: "2020-02-12 20:06:45">
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Shipper::ActiveRecord_Relation (3.4ms)
+Completed 200 OK in 98ms (Views: 31.4ms | ActiveRecord: 48.5ms | Allocations: 12973)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/product_category/destroyproductCategory" for ::1 at 2020-02-21 17:34:22 +0300
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (90.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/product_category/destroyproductCategory"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/product_category/CategoryProdAll" for ::1 at 2020-02-21 17:34:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/product_category/CategoryProdAll"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/product_category/CategoryProdAll" for ::1 at 2020-02-21 17:35:23 +0300
+Processing by ProductCategoryController#CategoryProdAll as */*
+  Parameters: {"product_category"=>{}}
+  [1m[36mProductCategory Load (65.7ms)[0m  [1m[34mSELECT productName, categoryName FROM `product_categories` INNER JOIN `products` ON `products`.`id` = `product_categories`.`product_id` INNER JOIN `categories` ON `categories`.`id` = `product_categories`.`category_id`[0m
+  ↳ app/controllers/product_category_controller.rb:58:in `CategoryProdAll'
+No serializer found for resource: #<ProductCategory id: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ProductCategory::ActiveRecord_Relation (4.46ms)
+Completed 200 OK in 232ms (Views: 160.9ms | ActiveRecord: 73.3ms | Allocations: 18724)
+
+
+Started GET "/product_category/CategoryProdAll" for ::1 at 2020-02-21 17:37:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/product_category/CategoryProdAll"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/CategoryProdAll" for ::1 at 2020-02-21 17:37:45 +0300
+Processing by ProductCategoryController#CategoryProdAll as */*
+  Parameters: {"product_category"=>{}}
+  [1m[36mProductCategory Load (0.6ms)[0m  [1m[34mSELECT productName, categoryName FROM `product_categories` INNER JOIN `products` ON `products`.`id` = `product_categories`.`product_id` INNER JOIN `categories` ON `categories`.`id` = `product_categories`.`category_id`[0m
+  ↳ app/controllers/product_category_controller.rb:58:in `CategoryProdAll'
+No serializer found for resource: #<ProductCategory id: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ProductCategory::ActiveRecord_Relation (2.46ms)
+Completed 200 OK in 43ms (Views: 38.5ms | ActiveRecord: 7.2ms | Allocations: 15326)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-21 17:41:30 +0300
+Started GET "/CategoryProdAll" for ::1 at 2020-02-21 17:41:48 +0300
+Processing by ProductCategoryController#CategoryProdAll as JSON
+  [1m[36mProductCategory Load (0.7ms)[0m  [1m[34mSELECT productName, categoryName FROM `product_categories` INNER JOIN `products` ON `products`.`id` = `product_categories`.`product_id` INNER JOIN `categories` ON `categories`.`id` = `product_categories`.`category_id`[0m
+  ↳ app/controllers/product_category_controller.rb:63:in `CategoryProdAll'
+No serializer found for resource: #<ProductCategory id: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ProductCategory::ActiveRecord_Relation (2.28ms)
+Completed 200 OK in 53ms (Views: 39.1ms | ActiveRecord: 7.3ms | Allocations: 16842)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:12:33 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 7.0ms | Allocations: 15674)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:15:50 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 4.9ms | Allocations: 10652)
+
+
+  
+NoMethodError (undefined method `joins' for :order:Symbol):
+  
+app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCustomers'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:20:32 +0300
+  
+SyntaxError (E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+  end
+  ^~~
+E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'):
+  
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:22:51 +0300
+  
+SyntaxError (E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+  end
+  ^~~
+E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'):
+  
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:29:07 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+  end
+  ^~~
+E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'):
+  
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:105: syntax error, unexpected end, expecting ')'
+app/controllers/customers_controller.rb:129: syntax error, unexpected end, expecting ')'
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:38:03 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Completed 404 Not Found in 32ms (Views: 16.5ms | ActiveRecord: 5.6ms | Allocations: 4551)
+
+
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:44:16 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 404 Not Found in 14ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 3882)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 21:54:44 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (32.8ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`customer_id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 33.5ms | Allocations: 10269)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'customers.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:14:35 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.45ms)
+Completed 200 OK in 184ms (Views: 162.1ms | ActiveRecord: 1.4ms | Allocations: 12812)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:26:38 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.32ms)
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 1.1ms | Allocations: 1737)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:26:53 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"4"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 4[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.8ms | Allocations: 1737)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:27:02 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"1"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 1[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 5ms (Views: 2.1ms | ActiveRecord: 0.8ms | Allocations: 1740)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:28:14 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"1"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 34ms (Views: 6.6ms | ActiveRecord: 6.9ms | Allocations: 11114)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:28:23 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.9ms | Allocations: 1763)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:30:18 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.36ms)
+Completed 200 OK in 30ms (Views: 5.8ms | ActiveRecord: 4.9ms | Allocations: 10822)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:30:22 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.22ms)
+Completed 200 OK in 6ms (Views: 2.7ms | ActiveRecord: 0.9ms | Allocations: 1766)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:31:36 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`customerName` = '5'[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 26ms (Views: 2.8ms | ActiveRecord: 4.7ms | Allocations: 10324)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:32:02 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`customerName` = '5'[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 27ms (Views: 3.0ms | ActiveRecord: 4.6ms | Allocations: 10321)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:32:04 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`customerName` = '5'[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 1649)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:33:06 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 4.5ms | Allocations: 9403)
+
+
+  
+ArgumentError (Unsupported argument type: 5 (Integer)):
+  
+app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCustomers'
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:34:01 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 30ms (Views: 5.3ms | ActiveRecord: 4.4ms | Allocations: 10795)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:39:08 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (31.9ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = NULL LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 53ms (Views: 7.5ms | ActiveRecord: 35.7ms | Allocations: 4666)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:42:18 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customerId"=>"5"}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 18ms (Views: 6.9ms | ActiveRecord: 3.7ms | Allocations: 3994)
+
+
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:42:34 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"id"=>"5"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.6ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCustomers'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 19ms (Views: 6.0ms | ActiveRecord: 1.1ms | Allocations: 8818)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:48:01 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+  Parameters: {"customer"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Completed 404 Not Found in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2074)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-21 22:49:20 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 404 Not Found in 22ms (Views: 8.6ms | ActiveRecord: 5.2ms | Allocations: 3993)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-22 15:07:28 +0300
+  [1m[35m (44.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (200.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-22 15:07:48 +0300
+Processing by CustomersController#getAllOrderDatilsCustomers as JSON
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Completed 404 Not Found in 422ms (Views: 34.3ms | ActiveRecord: 131.2ms | Allocations: 5435)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-22 15:15:05 +0300
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/getAllOrderDatilsCustomers"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-22 15:17:46 +0300
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-22 15:23:47 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-22 15:24:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/getAllOrderDatilsCustomers"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/getAllOrderDatilsCustomers" for ::1 at 2020-02-22 15:31:58 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+ActionController::RoutingError (No route matches [GET] "/getAllOrderDatilsCustomers"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started GET "/swagger" for ::1 at 2020-02-22 15:45:43 +0300
+  [1m[35m (44.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (213.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/swagger" for 127.0.0.1 at 2020-02-22 15:46:37 +0300
+Started POST "/getAllOrderDatilsCustomers" for 127.0.0.1 at 2020-02-22 15:47:10 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"categoryId"=>"5"}
+[31mUnpermitted parameter: :categoryId[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 404 Not Found in 131ms (Views: 18.4ms | ActiveRecord: 12.5ms | Allocations: 5673)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 15:51:23 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (98.2ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.79ms)
+Completed 200 OK in 323ms (Views: 190.0ms | ActiveRecord: 103.2ms | Allocations: 13940)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 15:52:29 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.`id`, `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.37ms)
+Completed 200 OK in 31ms (Views: 7.0ms | ActiveRecord: 4.5ms | Allocations: 10797)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 15:53:19 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.`id`, `customers`.`customerName` FROM `customers` WHERE `customers`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.44ms)
+Completed 200 OK in 34ms (Views: 11.3ms | ActiveRecord: 4.2ms | Allocations: 10864)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:02:18 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.9ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 142ms (ActiveRecord: 3.5ms | Allocations: 12502)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:09:47 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.8ms | Allocations: 10611)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:12:48 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 7.7ms | Allocations: 10879)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:14:38 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (12.7ms)[0m  [1m[34mSELECT customerName FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 97ms (Views: 15.3ms | ActiveRecord: 18.8ms | Allocations: 13189)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:15:36 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (1.0ms)[0m  [1m[34mSELECT customerName FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.08ms)
+Completed 200 OK in 38ms (Views: 6.2ms | ActiveRecord: 7.0ms | Allocations: 12320)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:15:51 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT customerName FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 0.8ms | Allocations: 1767)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 6 LIMIT 1[0m
+  [1m[36mOrder Create (27.8ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1967-09-09 00:00:00', 6, 2, 1, '2020-02-22 13:44:25.177361', '2020-02-22 13:44:25.177361')[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 7 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1968-11-03 00:00:00', 7, 20, 12, '2020-02-22 13:44:25.224161', '2020-02-22 13:44:25.224161')[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1970-05-24 00:00:00', 11, 20, 3, '2020-02-22 13:44:25.224161', '2020-02-22 13:44:25.224161')[0m
+  [1m[35m (34.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 19 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1986-08-25 00:00:00', 19, 15, 18, '2020-02-22 13:44:25.271962', '2020-02-22 13:44:25.271962')[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1974-03-31 00:00:00', 1, 8, 5, '2020-02-22 13:44:25.271962', '2020-02-22 13:44:25.271962')[0m
+  [1m[35m (142.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1984-04-05 00:00:00', 1, 11, 10, '2020-02-22 13:44:25.427962', '2020-02-22 13:44:25.427962')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 20 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1965-06-24 00:00:00', 20, 13, 7, '2020-02-22 13:44:25.427962', '2020-02-22 13:44:25.427962')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 19 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1968-01-08 00:00:00', 19, 7, 15, '2020-02-22 13:44:25.443562', '2020-02-22 13:44:25.443562')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 12 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1981-03-09 00:00:00', 12, 9, 9, '2020-02-22 13:44:25.443562', '2020-02-22 13:44:25.443562')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 1 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1977-08-22 00:00:00', 1, 17, 2, '2020-02-22 13:44:25.459162', '2020-02-22 13:44:25.459162')[0m
+  [1m[35m (27.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1982-04-08 00:00:00', 18, 2, 18, '2020-02-22 13:44:25.490362', '2020-02-22 13:44:25.490362')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 4 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1965-07-06 00:00:00', 4, 18, 15, '2020-02-22 13:44:25.490362', '2020-02-22 13:44:25.490362')[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 9 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('2000-03-31 00:00:00', 9, 14, 17, '2020-02-22 13:44:25.505962', '2020-02-22 13:44:25.505962')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 17 LIMIT 1[0m
+  [1m[36mOrder Create (0.5ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1993-02-01 00:00:00', 17, 8, 4, '2020-02-22 13:44:25.521562', '2020-02-22 13:44:25.521562')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrder Create (0.3ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1957-07-13 00:00:00', 11, 5, 6, '2020-02-22 13:44:25.521562', '2020-02-22 13:44:25.521562')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 2 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1974-01-22 00:00:00', 2, 8, 12, '2020-02-22 13:44:25.537162', '2020-02-22 13:44:25.537162')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1990-09-03 00:00:00', 18, 11, 14, '2020-02-22 13:44:25.537162', '2020-02-22 13:44:25.537162')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1969-10-20 00:00:00', 18, 2, 16, '2020-02-22 13:44:25.552762', '2020-02-22 13:44:25.552762')[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 10 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1987-02-24 00:00:00', 10, 15, 2, '2020-02-22 13:44:25.568362', '2020-02-22 13:44:25.568362')[0m
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 17 LIMIT 1[0m
+  [1m[36mOrder Create (0.4ms)[0m  [1m[32mINSERT INTO `orders` (`orderDate`, `customer_id`, `employee_id`, `shipper_id`, `created_at`, `updated_at`) VALUES ('1999-12-15 00:00:00', 17, 5, 13, '2020-02-22 13:44:25.568362', '2020-02-22 13:44:25.568362')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:45:13 +0300
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT customerName FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.23ms)
+Completed 200 OK in 28ms (Views: 22.1ms | ActiveRecord: 3.6ms | Allocations: 9390)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:47:29 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.9ms)[0m  [1m[34mSELECT `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 5[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.1ms)
+Completed 200 OK in 37ms (Views: 5.5ms | ActiveRecord: 7.6ms | Allocations: 12675)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:48:52 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: nil, orderDate: "1982-04-08 00:00:00", customer_id: 18>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.79ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 2.0ms | Allocations: 9460)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:50:35 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: nil, orderDate: "1982-04-08 00:00:00", customer_id: 18>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.86ms)
+Completed 200 OK in 58ms (Views: 25.2ms | ActiveRecord: 7.7ms | Allocations: 20002)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:51:26 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: nil, orderDate: "1982-04-08 00:00:00", customer_id: 18>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.89ms)
+Completed 200 OK in 79ms (Views: 46.2ms | ActiveRecord: 7.2ms | Allocations: 20010)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:52:43 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT `orders`.`id`, `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `orders`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: 11, orderDate: "1982-04-08 00:00:00", customer_id: 18>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.92ms)
+Completed 200 OK in 57ms (Views: 24.7ms | ActiveRecord: 6.9ms | Allocations: 20049)
+
+
+DEPRECATION WARNING: Initialization autoloaded the constants ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ApplicationController, for example,
+the expected changes won't be reflected in that stale Class object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at E:/PROG/Ruby/Ecommerce.Api/config/environment.rb:5)
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 13 LIMIT 1[0m
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1[0m
+  [1m[36mOrderDetail Create (38.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (34, 13, 2, '2020-02-22 13:58:35.825671', '2020-02-22 13:58:35.825671')[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (78, 10, 11, '2020-02-22 13:58:35.888071', '2020-02-22 13:58:35.888071')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 19 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 12 LIMIT 1[0m
+  [1m[36mOrderDetail Create (2.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (26, 19, 12, '2020-02-22 13:58:35.903671', '2020-02-22 13:58:35.903671')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (72, 1, 11, '2020-02-22 13:58:35.919271', '2020-02-22 13:58:35.919271')[0m
+  [1m[35m (25.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 7 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 12 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (86, 7, 12, '2020-02-22 13:58:35.950471', '2020-02-22 13:58:35.950471')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 15 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 20 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (95, 15, 20, '2020-02-22 13:58:35.966071', '2020-02-22 13:58:35.966071')[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 12 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (88, 12, 10, '2020-02-22 13:58:35.966071', '2020-02-22 13:58:35.966071')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 18 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (22, 18, 11, '2020-02-22 13:58:35.981671', '2020-02-22 13:58:35.981671')[0m
+  [1m[35m (27.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (10, 1, 1, '2020-02-22 13:58:36.010272', '2020-02-22 13:58:36.010272')[0m
+  [1m[35m (24.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.5ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 1 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 6 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.8ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (67, 1, 6, '2020-02-22 13:58:36.058072', '2020-02-22 13:58:36.058072')[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 13 LIMIT 1[0m
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.5ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (55, 13, 4, '2020-02-22 13:58:36.084074', '2020-02-22 13:58:36.084074')[0m
+  [1m[35m (18.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 10 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 17 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (23, 10, 17, '2020-02-22 13:58:36.111075', '2020-02-22 13:58:36.111075')[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 9 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (67, 9, 10, '2020-02-22 13:58:36.121076', '2020-02-22 13:58:36.121076')[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 9 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 20 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.3ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (71, 9, 20, '2020-02-22 13:58:36.132077', '2020-02-22 13:58:36.132077')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 13 LIMIT 1[0m
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 10 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (49, 13, 10, '2020-02-22 13:58:36.143077', '2020-02-22 13:58:36.143077')[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 20 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 4 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (85, 20, 4, '2020-02-22 13:58:36.170079', '2020-02-22 13:58:36.170079')[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 15 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 7 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (20, 15, 7, '2020-02-22 13:58:36.188080', '2020-02-22 13:58:36.188080')[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 2 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 8 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (65, 2, 8, '2020-02-22 13:58:36.202081', '2020-02-22 13:58:36.202081')[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.4ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 3 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 12 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (57, 3, 12, '2020-02-22 13:58:36.211081', '2020-02-22 13:58:36.211081')[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOrder Load (0.3ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` WHERE `orders`.`id` = 15 LIMIT 1[0m
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT `products`.* FROM `products` WHERE `products`.`id` = 11 LIMIT 1[0m
+  [1m[36mOrderDetail Create (0.4ms)[0m  [1m[32mINSERT INTO `order_details` (`quantity`, `order_id`, `product_id`, `created_at`, `updated_at`) VALUES (92, 15, 11, '2020-02-22 13:58:36.220082', '2020-02-22 13:58:36.220082')[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 16:59:50 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"5"}
+  [1m[36mCustomer Load (0.7ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (1.1ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id`[0m
+  ↳ app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 4.4ms | Allocations: 17598)
+
+
+  
+RuntimeError (unknown class: Order):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:03:02 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 6.5ms | Allocations: 12279)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:06:39 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 4.4ms | Allocations: 10640)
+
+
+  
+NoMethodError (undefined method `joins' for :order:Symbol):
+  
+app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:07:18 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (1.2ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id`[0m
+  ↳ app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 9.1ms | Allocations: 17848)
+
+
+  
+RuntimeError (unknown class: Order):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:08:36 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.6ms)[0m  [1m[34mSELECT quantity, `orders`.`customer_id`, customerName, `orders`.`orderDate` FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` INNER JOIN `order_details` ON `order_details`.`order_id` = `orders`.`id` WHERE `orders`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+No serializer found for resource: #<Order id: nil, orderDate: "1969-10-20 00:00:00", customer_id: 18>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Order::ActiveRecord_Relation (0.41ms)
+Completed 200 OK in 63ms (Views: 30.5ms | ActiveRecord: 7.4ms | Allocations: 21219)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:10:41 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 6.4ms | Allocations: 12690)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'product'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:20:57 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.8ms | Allocations: 10548)
+
+
+  
+NoMethodError (undefined method `joins' for :order:Symbol):
+  
+app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:21:56 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+  [1m[36mOrder Load (0.8ms)[0m  [1m[34mSELECT `orders`.* FROM `orders` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id`[0m
+  ↳ app/controllers/customers_controller.rb:103:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 9.2ms | Allocations: 17918)
+
+
+  
+RuntimeError (unknown class: Order):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:24:38 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 6.1ms | Allocations: 14792)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:25:21 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 5.4ms | Allocations: 14772)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:28:16 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:122:in `find_customerId'
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 5.6ms | Allocations: 12686)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'product'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:38:00 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:123:in `find_customerId'
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 3.3ms | Allocations: 11901)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'ordcust'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:39:33 +0300
+  
+SyntaxError (E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:104: syntax error, unexpected '(', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+...ustomers = OrderDetail.joins(:(Order.joins(:customer)), :pro...
+...                              ^
+E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:104: syntax error, unexpected ')', expecting end
+...joins(:(Order.joins(:customer)), :product).select('productNa...
+...                              ^):
+  
+app/controllers/customers_controller.rb:104: syntax error, unexpected '(', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/controllers/customers_controller.rb:104: syntax error, unexpected ')', expecting end
+app/controllers/customers_controller.rb:104: syntax error, unexpected '(', expecting tSTRING_CONTENT or tSTRING_DBEG or tSTRING_DVAR or tSTRING_END
+app/controllers/customers_controller.rb:104: syntax error, unexpected ')', expecting end
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:42:18 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:123:in `find_customerId'
+Completed 500 Internal Server Error in 188ms (ActiveRecord: 5.3ms | Allocations: 93295)
+
+
+  
+NameError (undefined local variable or method `customer' for #<CustomersController:0x0000000009dec930>
+Did you mean?  customers
+               @customer):
+  
+app/controllers/customers_controller.rb:104:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 17:42:42 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:123:in `find_customerId'
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 5.6ms | Allocations: 14782)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:08:56 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (1.0ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.0ms | Allocations: 14479)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'OrderDetail' to association named 'customer'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:12:17 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 7.3ms | Allocations: 12784)
+
+
+  
+ActiveRecord::ConfigurationError (Can't join 'Order' to association named 'product'; perhaps you misspelled it?):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:16:16 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.9ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customer_id, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 10.0ms | Allocations: 16284)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:17:44 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.5ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customer_id, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+No serializer found for resource: #<OrderDetail id: nil, quantity: 65>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with OrderDetail::ActiveRecord_Relation (0.36ms)
+Completed 200 OK in 73ms (Views: 38.8ms | ActiveRecord: 9.1ms | Allocations: 23486)
+
+
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:21:45 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"7"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.4ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customer_id, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 7[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 8.0ms | Allocations: 16263)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:23:57 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"7"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.9ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 7[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 8.6ms | Allocations: 16259)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:24:05 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.4ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.9ms | Allocations: 1971)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:26:54 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.3ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.4ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 8.2ms | Allocations: 16309)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:27:04 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.6ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 1972)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:29:28 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.5ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `customer`.`id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 10.3ms | Allocations: 16393)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'customer.id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:31:47 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.5ms)[0m  [1m[34mSELECT productName, `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `customer_id`.`id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 9.7ms | Allocations: 16336)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'customer_id.id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:37:05 +0300
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (E:/PROG/Ruby/Ecommerce.Api/app/controllers/customers_controller.rb:104: syntax error, unexpected =>, expecting ')'
+...tail.joins(:product, (:order => :customer) ).select('product...
+...                             ^~):
+  
+app/controllers/customers_controller.rb:104: syntax error, unexpected =>, expecting ')'
+app/controllers/customers_controller.rb:104: syntax error, unexpected =>, expecting ')'
+Started POST "/getAllOrderDatilsCust" for 127.0.0.1 at 2020-02-22 18:38:08 +0300
+Processing by CustomersController#getAllOrderDatilsCust as JSON
+  Parameters: {"customerId"=>"18"}
+  [1m[36mCustomer Load (0.5ms)[0m  [1m[34mSELECT `customers`.* FROM `customers` WHERE `customers`.`id` = 18 LIMIT 1[0m
+  ↳ app/controllers/customers_controller.rb:124:in `find_customerId'
+  [1m[36mOrderDetail Load (0.9ms)[0m  [1m[34mSELECT `order_details`.`quantity`, customerName, orderDate FROM `order_details` INNER JOIN `orders` ON `orders`.`id` = `order_details`.`order_id` INNER JOIN `customers` ON `customers`.`id` = `orders`.`customer_id` WHERE `order_details`.`customer_id` = 18[0m
+  ↳ app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 10.3ms | Allocations: 14070)
+
+
+  
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'order_details.customer_id' in 'where clause'):
+  
+app/controllers/customers_controller.rb:105:in `getAllOrderDatilsCust'

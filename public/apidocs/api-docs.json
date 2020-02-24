@@ -12,12 +12,12 @@
       "description": "Product_categories Management"
     },
     {
-      "path": "/apidocs/shippers.{format}",
-      "description": "Shippers Management"
-    },
-    {
       "path": "/apidocs/customers.{format}",
       "description": "Customers Management"
+    },
+    {
+      "path": "/apidocs/shippers.{format}",
+      "description": "Shippers Management"
     },
     {
       "path": "/apidocs/suppliers.{format}",
