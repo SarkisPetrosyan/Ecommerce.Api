@@ -1,0 +1,594 @@
+DEPRECATION WARNING: Initialization autoloaded the constants Knock::Authenticable, ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload Knock::Authenticable, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at C:/Users/User/Desktop/rails/Ecommerce.Api/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants Knock::Authenticable, ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload Knock::Authenticable, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at C:/Users/User/Desktop/rails/Ecommerce.Api/config/environment.rb:5)
+Started GET "/" for ::1 at 2020-02-26 12:49:59 +0400
+  [1m[35m (30.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-02-26 12:50:00 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2020-02-26 12:50:05 +0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT GET_LOCK('641904850572142290', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddCoulmsToCustomers (20200216212755)
+  [1m[35m (133.4ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255)[0m
+  [1m[35m (19.5ms)[0m  [1m[35mALTER TABLE `customers` ADD `login` varchar(255)[0m
+  [1m[35m (24.3ms)[0m  [1m[35mALTER TABLE `customers` ADD `password` varchar(255)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (5.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200216212755')[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddColumnToCustomers (20200218204614)
+  [1m[35m (3.0ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255) NOT NULL[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('641904850572142290')[0m
+  
+StandardError (An error has occurred, all later migrations canceled:
+
+Mysql2::Error: Duplicate column name 'email'):
+  
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `_query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `block in query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `query'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:202:in `block (2 levels) in execute'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.0.2.1) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:201:in `block in execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:718:in `block (2 levels) in log'
+C:/Ruby26-x64/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:717:in `block in log'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:708:in `log'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:200:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql/database_statements.rb:41:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:591:in `add_column'
+activerecord (6.0.2.1) lib/active_record/migration.rb:890:in `block in method_missing'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `block in say_with_time'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `say_with_time'
+activerecord (6.0.2.1) lib/active_record/migration.rb:879:in `method_missing'
+db/migrate/20200218204614_add_column_to_customers.rb:3:in `change'
+activerecord (6.0.2.1) lib/active_record/migration.rb:828:in `exec_migration'
+activerecord (6.0.2.1) lib/active_record/migration.rb:812:in `block (2 levels) in migrate'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:811:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `with_connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:810:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1001:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1311:in `block in execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1364:in `ddl_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1310:in `execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1282:in `block in migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `each'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1382:in `with_advisory_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1061:in `up'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1036:in `migrate'
+activerecord (6.0.2.1) lib/active_record/tasks/database_tasks.rb:238:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:135:in `block in <class:PendingMigrationError>'
+activesupport (6.0.2.1) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-02-26 12:50:06 +0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2020-02-26 12:53:42 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('641904850572142290', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddColumnToCustomers (20200218204614)
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255) NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('641904850572142290')[0m
+  
+StandardError (An error has occurred, all later migrations canceled:
+
+Mysql2::Error: Duplicate column name 'email'):
+  
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `_query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `block in query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `query'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:202:in `block (2 levels) in execute'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.0.2.1) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:201:in `block in execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:718:in `block (2 levels) in log'
+C:/Ruby26-x64/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:717:in `block in log'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:708:in `log'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:200:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql/database_statements.rb:41:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:591:in `add_column'
+activerecord (6.0.2.1) lib/active_record/migration.rb:890:in `block in method_missing'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `block in say_with_time'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `say_with_time'
+activerecord (6.0.2.1) lib/active_record/migration.rb:879:in `method_missing'
+db/migrate/20200218204614_add_column_to_customers.rb:3:in `change'
+activerecord (6.0.2.1) lib/active_record/migration.rb:828:in `exec_migration'
+activerecord (6.0.2.1) lib/active_record/migration.rb:812:in `block (2 levels) in migrate'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:811:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `with_connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:810:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1001:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1311:in `block in execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1364:in `ddl_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1310:in `execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1282:in `block in migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `each'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1382:in `with_advisory_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1061:in `up'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1036:in `migrate'
+activerecord (6.0.2.1) lib/active_record/tasks/database_tasks.rb:238:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:135:in `block in <class:PendingMigrationError>'
+activesupport (6.0.2.1) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-02-26 12:53:43 +0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-26 12:53:46 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-02-26 12:53:47 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2020-02-26 12:53:49 +0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('641904850572142290', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddColumnToCustomers (20200218204614)
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255) NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('641904850572142290')[0m
+  
+StandardError (An error has occurred, all later migrations canceled:
+
+Mysql2::Error: Duplicate column name 'email'):
+  
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `_query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:131:in `block in query'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `handle_interrupt'
+mysql2-0.5.3-x64 (mingw32) lib/mysql2/client.rb:130:in `query'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:202:in `block (2 levels) in execute'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:48:in `block in permit_concurrent_loads'
+activesupport (6.0.2.1) lib/active_support/concurrency/share_lock.rb:187:in `yield_shares'
+activesupport (6.0.2.1) lib/active_support/dependencies/interlock.rb:47:in `permit_concurrent_loads'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:201:in `block in execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:718:in `block (2 levels) in log'
+C:/Ruby26-x64/lib/ruby/2.6.0/monitor.rb:235:in `mon_synchronize'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:717:in `block in log'
+activesupport (6.0.2.1) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_adapter.rb:708:in `log'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract_mysql_adapter.rb:200:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql/database_statements.rb:41:in `execute'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/schema_statements.rb:591:in `add_column'
+activerecord (6.0.2.1) lib/active_record/migration.rb:890:in `block in method_missing'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `block in say_with_time'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:858:in `say_with_time'
+activerecord (6.0.2.1) lib/active_record/migration.rb:879:in `method_missing'
+db/migrate/20200218204614_add_column_to_customers.rb:3:in `change'
+activerecord (6.0.2.1) lib/active_record/migration.rb:828:in `exec_migration'
+activerecord (6.0.2.1) lib/active_record/migration.rb:812:in `block (2 levels) in migrate'
+C:/Ruby26-x64/lib/ruby/2.6.0/benchmark.rb:293:in `measure'
+activerecord (6.0.2.1) lib/active_record/migration.rb:811:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `with_connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:810:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1001:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1311:in `block in execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1364:in `ddl_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1310:in `execute_migration_in_transaction'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1282:in `block in migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `each'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1281:in `migrate_without_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `block in migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1382:in `with_advisory_lock'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1229:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1061:in `up'
+activerecord (6.0.2.1) lib/active_record/migration.rb:1036:in `migrate'
+activerecord (6.0.2.1) lib/active_record/tasks/database_tasks.rb:238:in `migrate'
+activerecord (6.0.2.1) lib/active_record/migration.rb:135:in `block in <class:PendingMigrationError>'
+activesupport (6.0.2.1) lib/active_support/actionable_error.rb:28:in `dispatch'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:19:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-02-26 12:53:49 +0400
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.2.1) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.2.1) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.2) lib/rack/runtime.rb:24:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.1.2) lib/rack/sendfile.rb:113:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: Initialization autoloaded the constants Knock::Authenticable, ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload Knock::Authenticable, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at C:/Users/User/Desktop/rails/Ecommerce.Api/config/environment.rb:5)
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('641904850572142290', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddColumnToCustomers (20200218204614)
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255) NOT NULL[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('641904850572142290')[0m
+DEPRECATION WARNING: Initialization autoloaded the constants Knock::Authenticable, ApplicationController, ActionText::ContentHelper, and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload Knock::Authenticable, for example,
+the expected changes won't be reflected in that stale Module object.
+
+`config.autoloader` is set to `classic`. These autoloaded constants would have been unloaded if `config.autoloader` had been set to `:zeitwerk`.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <top (required)> at C:/Users/User/Desktop/rails/Ecommerce.Api/config/environment.rb:5)
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('641904850572142290', 0)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to AddColumnToCustomers (20200218204614)
+  [1m[35m (18.9ms)[0m  [1m[35mALTER TABLE `customers` ADD `email` varchar(255) NOT NULL[0m
+  [1m[35m (23.8ms)[0m  [1m[35mALTER TABLE `customers` ADD `password_digest` varchar(255)[0m
+  [1m[35m (16.8ms)[0m  [1m[35mALTER TABLE `customers` ADD `role` varchar(255) DEFAULT 'user' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (3.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200218204614')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (11.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('641904850572142290')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
