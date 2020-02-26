@@ -28,7 +28,11 @@ Knock.setup do |config|
   ## Configure the algorithm used to encode the token
   ##
   ## Default:
+<<<<<<< HEAD
   config.token_signature_algorithm = 'HS256'
+=======
+  # config.token_signature_algorithm = 'HS256'
+>>>>>>> origin/apidoc
 
   ## Signature key
   ## -------------

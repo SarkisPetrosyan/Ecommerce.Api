@@ -3,6 +3,8 @@ class CustomersController < ApplicationController
   before_action :authorize, only: [:update]
   before_action :authorize_as_admin, only: [:index, :destroy]
   before_action :set_customer, only: [:show, :update, :destroy]
+  before_action :find_customerId, only: [:getAllOrderDatilsCust]
+
 
   swagger_controller :customers, "Customers Management"
 
@@ -87,6 +89,26 @@ class CustomersController < ApplicationController
     response :not_found
   end
 
+  # ________________________________________________________________
+
+  swagger_api :getAllOrderDatilsCust do
+    summary "Fetches all products from Order Detils "
+    param :form, :customerId, :string, :required, "Customer Id"
+    response :ok, "Success", :getAllOrderDatilsCust
+    response :unauthorized
+    response :not_acceptable
+    response :not_found
+  end
+
+  def getAllOrderDatilsCust
+    # ordcust = 
+    customers = OrderDetail.joins(:order => :customer ).select('quantity','customerName','orderDate').where(customer_id: @customer.id) 
+       render json: customers
+  end
+  
+  # (((OrderDetail.joins(:product)).joins
+  # 'quantity','productName', 
+
   # DELETE /customers/1
   def destroy
     @customer.destroy
@@ -96,6 +118,11 @@ class CustomersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_customer
       @customer = Customer.find(params[:id])
+    end
+
+    def find_customerId
+      data = params.permit(:customerId)      
+      @customer = Customer.find(data[:customerId]);
     end
 
     # Only allow a trusted parameter "white list" through.

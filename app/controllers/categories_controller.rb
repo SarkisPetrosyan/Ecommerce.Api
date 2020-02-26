@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :set_category, only: [:show, :update, :destroy,]
 
   swagger_controller :categories, "Categories Management"
 
@@ -46,9 +47,7 @@ class CategoriesController < ApplicationController
     else
       render json: @category.errors, status: :unprocessable_entity
     end
-  end
-
-  
+  end 
 
   swagger_api :update do
     summary "Update a existing Category"
@@ -68,13 +67,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  swagger_api :destroy do
-    summary "Deletes an existing Category item"
-    param :form, :categoryId, :integer, :optional, "Category Id"
-    param :form, :productId, :integer, :optional, "Category Id"
-    response :unauthorized
-    response :not_found
-  end
+  
 
   # DELETE /categories/1
   def destroy
