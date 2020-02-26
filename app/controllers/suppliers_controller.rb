@@ -31,7 +31,7 @@ class SuppliersController < ApplicationController
     #Category.find_by(id: 21).products
     #https://www.sitepoint.com/master-many-to-many-associations-with-activerecord/
     #Product.joins(:categories).where(categories: {categoryName: 'Pappardelle alla Bolognese'}).distinct.map {|x| puts x.productName}
-    
+    #testin og new branch
     render json: @supplier
   end
 
@@ -78,6 +78,13 @@ class SuppliersController < ApplicationController
     else
       render json: @supplier.errors, status: :unprocessable_entity
     end
+  end
+
+  swagger_api :destroy do
+    summary "Deletes an existing Supplier item"
+    param :path, :id, :integer, :optional, "Supplier Id"
+    response :unauthorized
+    response :not_found
   end
 
   # DELETE /suppliers/1

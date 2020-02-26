@@ -4,12 +4,28 @@
   "basePath": "http://localhost:3000",
   "apis": [
     {
+      "path": "/apidocs/employees.{format}",
+      "description": "Employees Management"
+    },
+    {
+      "path": "/apidocs/product_category.{format}",
+      "description": "Product_categories Management"
+    },
+    {
+      "path": "/apidocs/customers.{format}",
+      "description": "Customers Management"
+    },
+    {
       "path": "/apidocs/shippers.{format}",
       "description": "Shippers Management"
     },
     {
       "path": "/apidocs/suppliers.{format}",
       "description": "Supplier Management"
+    },
+    {
+      "path": "/apidocs/categories.{format}",
+      "description": "Categories Management"
     }
   ],
   "authorizations": null,

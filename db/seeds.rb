@@ -17,6 +17,12 @@
 #     )
 # end
 # 20.times do
+#         Shipper.create(
+#          shipperName: Faker::Name.name,
+#           phone: Faker::Number.number(digits: 10)
+#         )
+#     end
+# 20.times do
 #     cat = Category.create(categoryName: Faker::Food.dish, description:  Faker::Food.description)
 #     product = Product.create(productName: Faker::Food.dish, unit: '1kg', price: 200, supplier_id: 1)
 #     prcat = ProductCategory.create(product: product, category: cat)          
@@ -31,7 +37,33 @@
 #          notes: Faker::Food.description
 #         )
 #     end
+# 20.times do
+#     Customer.create(
+#         customerName: Faker::Name.name,
+#          contactName:  Faker::Name.name, 
+#          address:  Faker::Address.street_address,
+#          city: Faker::Address.city, 
+#          postalCode: Faker::Address.postcode,
+#          country: Faker::Address.country,
+#          )
+#     end
 
+# 20.times do
+#         Order.create(
+#             orderDate: Faker::Date.birthday(min_age: 18, max_age: 65),
+#             customer_id:  Faker::Number.within(range: 1..20),
+#             employee_id:  Faker::Number.within(range: 1..20),
+#             shipper_id: Faker::Number.within(range: 1..20) 
+#              )
+#         end
+# 20.times do
+#     OrderDetail.create(
+#         quantity: Faker::Number.within(range: 5..100),
+#         order_id:  Faker::Number.within(range: 1..20),
+#         product_id:  Faker::Number.within(range: 1..20),
+            
+#              )
+#         end
 
 
 

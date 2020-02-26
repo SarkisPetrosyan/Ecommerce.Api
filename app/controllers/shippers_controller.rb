@@ -29,15 +29,33 @@ class ShippersController < ApplicationController
     render json: @shipper
   end
 
+
+swagger_api :create do
+    summary "Creates a new Shipper"
+    param :form, :shipperName, :string, :required, "Shipper Name"    
+    param_list :form, :phone, :string, :required, "Phone"
+    response :unauthorized
+    response :not_acceptable
+  end
   # POST /shippers
   def create
     @shipper = Shipper.new(shipper_params)
-
+    
     if @shipper.save
       render json: @shipper, status: :created, location: @shipper
     else
       render json: @shipper.errors, status: :unprocessable_entity
     end
+  end
+  
+  swagger_api :update do
+    summary "Updates an existing Shipper"
+    param :path, :id, :integer, :required, "Shipper Id"
+    param :form, :shipperName, :string, :required, "Shipper Name"
+    param :form, :phone, :string, :required, "Phone"    
+    response :unauthorized
+    response :not_found
+    response :not_acceptable
   end
 
   # PATCH/PUT /shippers/1
@@ -49,6 +67,13 @@ class ShippersController < ApplicationController
     end
   end
 
+
+  swagger_api :destroy do
+    summary "Deletes an existing Shipper item"
+    param :path, :id, :integer, :optional, "Shipper Id"
+    response :unauthorized
+    response :not_found
+  end
   # DELETE /shippers/1
   def destroy
     @shipper.destroy

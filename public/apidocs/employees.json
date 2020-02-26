@@ -2,14 +2,14 @@
   "apiVersion": "1.0",
   "swaggerVersion": "1.2",
   "basePath": "http://localhost:3000",
-  "resourcePath": "shippers",
+  "resourcePath": "employees",
   "apis": [
     {
-      "path": "/shippers",
+      "path": "/employees",
       "operations": [
         {
-          "summary": "Fetches all Shippers items",
-          "notes": "This lists all the active shippers",
+          "summary": "Fetches all Employee items",
+          "notes": "This lists all the active employee",
           "responseMessages": [
             {
               "code": 401,
@@ -22,16 +22,16 @@
               "message": "The request you made is not acceptable"
             }
           ],
-          "nickname": "Shippers#index",
+          "nickname": "Employees#index",
           "method": "get"
         }
       ]
     },
     {
-      "path": "/shippers",
+      "path": "/employees",
       "operations": [
         {
-          "summary": "Creates a new Shipper",
+          "summary": "Creates a new Employee",
           "responseMessages": [
             {
               "code": 401,
@@ -47,39 +47,54 @@
           "parameters": [
             {
               "paramType": "form",
-              "name": "shipperName",
+              "name": "lastName",
               "type": "string",
-              "description": "Shipper Name",
+              "description": "Employee lastName",
               "required": true
             },
             {
               "paramType": "form",
-              "name": "phone",
+              "name": "firstName",
               "type": "string",
-              "description": "Phone",
-              "required": true,
-              "allowableValues": {
-                "valueType": "LIST",
-                "values": [
-
-                ]
-              }
+              "description": "Employee Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "birthDay",
+              "type": "datetime",
+              "description": "Employee Birth Day",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "photo",
+              "type": "string",
+              "description": "Employee Photo",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "notes",
+              "type": "string",
+              "description": "Employee Notes",
+              "required": true
             }
           ],
-          "nickname": "Shippers#create",
+          "nickname": "Employees#create",
           "method": "post"
         }
       ]
     },
     {
-      "path": "/shippers/{id}",
+      "path": "/employees/{id}",
       "operations": [
         {
-          "summary": "Fetches a single Shipper item",
+          "summary": "Fetches a single Employee item",
           "responseMessages": [
             {
               "code": 200,
-              "responseModel": "Shipper",
+              "responseModel": "Employee",
               "message": "Success"
             },
             {
@@ -103,20 +118,20 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Shipper Id",
+              "description": "Employee Id",
               "required": false
             }
           ],
-          "nickname": "Shippers#show",
+          "nickname": "Employees#show",
           "method": "get"
         }
       ]
     },
     {
-      "path": "/shippers/{id}",
+      "path": "/employees/{id}",
       "operations": [
         {
-          "summary": "Updates an existing Shipper",
+          "summary": "Updates an existing Employee",
           "responseMessages": [
             {
               "code": 401,
@@ -139,34 +154,55 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Shipper Id",
+              "description": "Employee Id",
               "required": true
             },
             {
               "paramType": "form",
-              "name": "shipperName",
+              "name": "lastName",
               "type": "string",
-              "description": "Shipper Name",
+              "description": "Employee lastName",
               "required": true
             },
             {
               "paramType": "form",
-              "name": "phone",
+              "name": "firstName",
               "type": "string",
-              "description": "Phone",
+              "description": "Employee Name",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "birthDay",
+              "type": "datetime",
+              "description": "Employee Birth Day",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "photo",
+              "type": "string",
+              "description": "Employee Photo",
+              "required": true
+            },
+            {
+              "paramType": "form",
+              "name": "notes",
+              "type": "string",
+              "description": "Employee Notes",
               "required": true
             }
           ],
-          "nickname": "Shippers#update",
+          "nickname": "Employees#update",
           "method": "patch"
         }
       ]
     },
     {
-      "path": "/shippers/{id}",
+      "path": "/employees/{id}",
       "operations": [
         {
-          "summary": "Deletes an existing Shipper item",
+          "summary": "Deletes an existing Employee item",
           "responseMessages": [
             {
               "code": 401,
@@ -184,11 +220,11 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Shipper Id",
+              "description": "Employee Id",
               "required": false
             }
           ],
-          "nickname": "Shippers#destroy",
+          "nickname": "Employees#destroy",
           "method": "delete"
         }
       ]

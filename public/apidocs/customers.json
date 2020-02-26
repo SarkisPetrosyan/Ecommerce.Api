@@ -2,14 +2,55 @@
   "apiVersion": "1.0",
   "swaggerVersion": "1.2",
   "basePath": "http://localhost:3000",
-  "resourcePath": "suppliers",
+  "resourcePath": "customers",
   "apis": [
     {
-      "path": "/suppliers",
+      "path": "/getAllOrderDatilsCust",
       "operations": [
         {
-          "summary": "Fetches all Suppliers items",
-          "notes": "This lists all the active suppliers",
+          "summary": "Fetches all products from Order Detils ",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "getAllOrderDatilsCust",
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "form",
+              "name": "customerId",
+              "type": "string",
+              "description": "Customer Id",
+              "required": true
+            }
+          ],
+          "nickname": "Customers#getAllOrderDatilsCust",
+          "method": "post"
+        }
+      ]
+    },
+    {
+      "path": "/customers",
+      "operations": [
+        {
+          "summary": "Fetches all Customer items",
+          "notes": "This lists all the active customer",
           "responseMessages": [
             {
               "code": 401,
@@ -22,16 +63,16 @@
               "message": "The request you made is not acceptable"
             }
           ],
-          "nickname": "Suppliers#index",
+          "nickname": "Customers#index",
           "method": "get"
         }
       ]
     },
     {
-      "path": "/suppliers",
+      "path": "/customers",
       "operations": [
         {
-          "summary": "Creates a new Supplier",
+          "summary": "Creates a new Customer",
           "responseMessages": [
             {
               "code": 401,
@@ -49,7 +90,7 @@
               "paramType": "form",
               "name": "supplierName",
               "type": "string",
-              "description": "Supplier Name",
+              "description": "Customer Name",
               "required": true
             },
             {
@@ -86,35 +127,22 @@
               "type": "string",
               "description": "Country",
               "required": true
-            },
-            {
-              "paramType": "form",
-              "name": "phone",
-              "type": "string",
-              "description": "Phone",
-              "required": true,
-              "allowableValues": {
-                "valueType": "LIST",
-                "values": [
-
-                ]
-              }
             }
           ],
-          "nickname": "Suppliers#create",
+          "nickname": "Customers#create",
           "method": "post"
         }
       ]
     },
     {
-      "path": "/suppliers/{id}",
+      "path": "/customers/{id}",
       "operations": [
         {
-          "summary": "Fetches a single Supplier item",
+          "summary": "Fetches a single Customer item",
           "responseMessages": [
             {
               "code": 200,
-              "responseModel": "Supplier",
+              "responseModel": "Customer",
               "message": "Success"
             },
             {
@@ -138,20 +166,20 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Supplier Id",
+              "description": "Customer Id",
               "required": true
             }
           ],
-          "nickname": "Suppliers#show",
+          "nickname": "Customers#show",
           "method": "get"
         }
       ]
     },
     {
-      "path": "/suppliers/{id}",
+      "path": "/customers/{id}",
       "operations": [
         {
-          "summary": "Update a existing Supplier",
+          "summary": "Update a existing Customer",
           "responseMessages": [
             {
               "code": 401,
@@ -169,14 +197,14 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Supplier Id",
+              "description": "Customer Id",
               "required": true
             },
             {
               "paramType": "form",
               "name": "supplierName",
               "type": "string",
-              "description": "Supplier Name",
+              "description": "Customer Name",
               "required": true
             },
             {
@@ -213,31 +241,18 @@
               "type": "string",
               "description": "Country",
               "required": true
-            },
-            {
-              "paramType": "form",
-              "name": "phone",
-              "type": "string",
-              "description": "Phone",
-              "required": true,
-              "allowableValues": {
-                "valueType": "LIST",
-                "values": [
-
-                ]
-              }
             }
           ],
-          "nickname": "Suppliers#update",
+          "nickname": "Customers#update",
           "method": "patch"
         }
       ]
     },
     {
-      "path": "/suppliers/{id}",
+      "path": "/customers/{id}",
       "operations": [
         {
-          "summary": "Deletes an existing Supplier item",
+          "summary": "Deletes an existing Customer item",
           "responseMessages": [
             {
               "code": 401,
@@ -255,11 +270,11 @@
               "paramType": "path",
               "name": "id",
               "type": "integer",
-              "description": "Supplier Id",
+              "description": "Customer Id",
               "required": false
             }
           ],
-          "nickname": "Suppliers#destroy",
+          "nickname": "Customers#destroy",
           "method": "delete"
         }
       ]
