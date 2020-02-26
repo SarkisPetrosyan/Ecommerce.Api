@@ -102,8 +102,9 @@ class CustomersController < ApplicationController
 
   def getAllOrderDatilsCust
     # ordcust = 
-    customers = OrderDetail.joins(:order => :customer ).select('quantity','customerName','orderDate').where(customer_id: @customer.id) 
-       render json: customers
+    #customers = OrderDetail.joins(:order => :customer ).select('quantity','customerName','orderDate').where(customer_id: @customer.id) 
+    orders = Order.joins(:customer).joins(:order_detail => [:product]).where(customer_id: @customer.id) 
+       render json: orders
   end
   
   # (((OrderDetail.joins(:product)).joins
