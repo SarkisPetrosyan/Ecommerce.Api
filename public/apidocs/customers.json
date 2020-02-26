@@ -5,6 +5,47 @@
   "resourcePath": "customers",
   "apis": [
     {
+      "path": "/getAllOrderDatilsCust",
+      "operations": [
+        {
+          "summary": "Fetches all products from Order Detils ",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "getAllOrderDatilsCust",
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "form",
+              "name": "customerId",
+              "type": "string",
+              "description": "Customer Id",
+              "required": true
+            }
+          ],
+          "nickname": "Customers#getAllOrderDatilsCust",
+          "method": "post"
+        }
+      ]
+    },
+    {
       "path": "/customers",
       "operations": [
         {

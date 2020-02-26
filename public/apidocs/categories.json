@@ -5,82 +5,6 @@
   "resourcePath": "categories",
   "apis": [
     {
-      "path": "/productCategory",
-      "operations": [
-        {
-          "summary": "Creates a new Product Category",
-          "responseMessages": [
-            {
-              "code": 401,
-              "responseModel": null,
-              "message": "Unauthorized"
-            },
-            {
-              "code": 406,
-              "responseModel": null,
-              "message": "Not Acceptable"
-            }
-          ],
-          "parameters": [
-            {
-              "paramType": "form",
-              "name": "categoryId",
-              "type": "string",
-              "description": "Category Id",
-              "required": true
-            },
-            {
-              "paramType": "form",
-              "name": "productId",
-              "type": "string",
-              "description": "Product Id",
-              "required": true
-            }
-          ],
-          "nickname": "Categories#productCategory",
-          "method": "post"
-        }
-      ]
-    },
-    {
-      "path": "/categories/destroyproductCategory",
-      "operations": [
-        {
-          "summary": "Deletes an existing Destroy Product Category",
-          "responseMessages": [
-            {
-              "code": 401,
-              "responseModel": null,
-              "message": "Unauthorized"
-            },
-            {
-              "code": 404,
-              "responseModel": null,
-              "message": "Not Found"
-            }
-          ],
-          "parameters": [
-            {
-              "paramType": "form",
-              "name": "productId",
-              "type": "integer",
-              "description": "Product Id",
-              "required": true
-            },
-            {
-              "paramType": "form",
-              "name": "categoryId",
-              "type": "integer",
-              "description": "Category Id",
-              "required": true
-            }
-          ],
-          "nickname": "Categories#destroyproductCategory",
-          "method": "delete"
-        }
-      ]
-    },
-    {
       "path": "/categories",
       "operations": [
         {
@@ -224,44 +148,6 @@
           ],
           "nickname": "Categories#update",
           "method": "patch"
-        }
-      ]
-    },
-    {
-      "path": "/categories/{id}",
-      "operations": [
-        {
-          "summary": "Deletes an existing Category item",
-          "responseMessages": [
-            {
-              "code": 401,
-              "responseModel": null,
-              "message": "Unauthorized"
-            },
-            {
-              "code": 404,
-              "responseModel": null,
-              "message": "Not Found"
-            }
-          ],
-          "parameters": [
-            {
-              "paramType": "form",
-              "name": "categoryId",
-              "type": "integer",
-              "description": "Category Id",
-              "required": false
-            },
-            {
-              "paramType": "form",
-              "name": "productId",
-              "type": "integer",
-              "description": "Category Id",
-              "required": false
-            }
-          ],
-          "nickname": "Categories#destroy",
-          "method": "delete"
         }
       ]
     }
