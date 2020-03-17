@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   resources :customers
   resources :suppliers
   resources :categories
+  resources :products
 
   get '/swagger' => redirect('/swagger/dist/index.html?url=/apidocs/api-docs.json')
 end
