@@ -30,6 +30,9 @@ class CustomersController < ApplicationController
     response :not_found
   end
 
+  def current
+    render json: current_customer
+  end
   # GET /customers/1
   def show
     render json: @customer
@@ -104,7 +107,7 @@ class CustomersController < ApplicationController
     # ordcust = 
     #customers = OrderDetail.joins(:order => :customer ).select('quantity','customerName','orderDate').where(customer_id: @customer.id) 
     orders = Order.joins(:customer).joins(:order_detail => [:product]).where(customer_id: @customer.id) 
-       render json: orders
+    render json: orders
   end
   
   # (((OrderDetail.joins(:product)).joins
