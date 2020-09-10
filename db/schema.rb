@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_18_204614) do
+ActiveRecord::Schema.define(version: 2020_09_07_181752) do
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "categoryName"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 2020_02_18_204614) do
     t.string "email", null: false
     t.string "password_digest"
     t.string "role", default: "user", null: false
+    t.string "contact_name"
   end
 
   create_table "employees", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
@@ -89,6 +90,17 @@ ActiveRecord::Schema.define(version: 2020_02_18_204614) do
     t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shopping_carts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "product_id"
+    t.bigint "customer_id"
+    t.integer "total"
+    t.integer "quantity"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["customer_id"], name: "index_shopping_carts_on_customer_id"
+    t.index ["product_id"], name: "index_shopping_carts_on_product_id"
   end
 
   create_table "suppliers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|

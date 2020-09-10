@@ -22,11 +22,11 @@
 #           phone: Faker::Number.number(digits: 10)
 #         )
 #     end
-# 20.times do
-#     cat = Category.create(categoryName: Faker::Food.dish, description:  Faker::Food.description)
-#     product = Product.create(productName: Faker::Food.dish, unit: '1kg', price: 200, supplier_id: 1)
-#     prcat = ProductCategory.create(product: product, category: cat)          
-# end
+20.times do
+    cat = Category.create(categoryName: Faker::Food.dish, description:  Faker::Food.description)
+    product = Product.create(productName: Faker::Food.dish, unit: '1kg', price: 200, supplier_id: 1)
+    prcat = ProductCategory.create(product: product, category: cat)          
+end
 
 # 20.times do
 #         Employee.create(

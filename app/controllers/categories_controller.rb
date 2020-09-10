@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_action :set_category, only: [:show, :update, :destroy,]
+  before_action :set_category, only: [:show, :update, :destroy]
 
   swagger_controller :categories, "Categories Management"
 

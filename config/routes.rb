@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   post 'customer_token' => 'customer_token#create'
 
   resources :employees
@@ -23,6 +24,10 @@ Rails.application.routes.draw do
   resources :suppliers
   resources :categories
   resources :products
+
+  # shopping_carts
+  get 'cart' => 'shopping_carts#index'
+  post 'new_cart' => 'shopping_carts#create'
 
   get '/swagger' => redirect('/swagger/dist/index.html?url=/apidocs/api-docs.json')
 end

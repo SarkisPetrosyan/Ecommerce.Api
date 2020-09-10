@@ -3,4 +3,5 @@ class Product < ApplicationRecord
     has_many :categories, through: :product_category
     belongs_to :supplier
     has_many :order_detail
+    has_many :shopping_carts
 end

@@ -43,47 +43,6 @@
       ]
     },
     {
-      "path": "/CategoryProd",
-      "operations": [
-        {
-          "summary": "Fetches a single CategoryProd ",
-          "responseMessages": [
-            {
-              "code": 200,
-              "responseModel": "CategoryProd",
-              "message": "Success"
-            },
-            {
-              "code": 401,
-              "responseModel": null,
-              "message": "Unauthorized"
-            },
-            {
-              "code": 404,
-              "responseModel": null,
-              "message": "Not Found"
-            },
-            {
-              "code": 406,
-              "responseModel": null,
-              "message": "Not Acceptable"
-            }
-          ],
-          "parameters": [
-            {
-              "paramType": "form",
-              "name": "categoryId",
-              "type": "string",
-              "description": "Category Id",
-              "required": true
-            }
-          ],
-          "nickname": "ProductCategory#CategoryProd",
-          "method": "post"
-        }
-      ]
-    },
-    {
       "path": "/CategoryProdAll",
       "operations": [
         {
@@ -126,6 +85,47 @@
           ],
           "nickname": "ProductCategory#CategoryPro",
           "method": "get"
+        }
+      ]
+    },
+    {
+      "path": "/CategoryProd",
+      "operations": [
+        {
+          "summary": "Fetches a single CategoryProd ",
+          "responseMessages": [
+            {
+              "code": 200,
+              "responseModel": "CategoryProd",
+              "message": "Success"
+            },
+            {
+              "code": 401,
+              "responseModel": null,
+              "message": "Unauthorized"
+            },
+            {
+              "code": 404,
+              "responseModel": null,
+              "message": "Not Found"
+            },
+            {
+              "code": 406,
+              "responseModel": null,
+              "message": "Not Acceptable"
+            }
+          ],
+          "parameters": [
+            {
+              "paramType": "form",
+              "name": "categoryId",
+              "type": "string",
+              "description": "Category Id",
+              "required": true
+            }
+          ],
+          "nickname": "ProductCategory#CategoryProd",
+          "method": "post"
         }
       ]
     },

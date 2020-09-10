@@ -1,9 +1,9 @@
 class CustomersController < ApplicationController
-  before_action :authenticate_customer,  only: [:show]  
-  before_action :authorize, only: [:update]
-  before_action :authorize_as_admin, only: [:index, :destroy]
-  before_action :set_customer, only: [:show, :update, :destroy]
-  before_action :find_customerId, only: [:getAllOrderDatilsCust]
+    before_action :authenticate_customer,  only: [:show]  
+    before_action :authorize, only: [:update]
+    before_action :authorize_as_admin, only: [:index, :destroy]
+    before_action :set_customer, only: [:show, :update, :destroy]
+    before_action :find_customerId, only: [:getAllOrderDatilsCust]
 
 
   swagger_controller :customers, "Customers Management"
